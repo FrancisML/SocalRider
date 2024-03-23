@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socal Rider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js_effects.js"></script>
+		<script src="DropDownMobleNavJs.js"></script>
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+    <header>
+        <div id="title-tag-cont">
+            <span>Four Wheels move the body</span>
+            <img src="/SocalRider/imgs/socal logo copy.png" alt="">
+            <span>Two wheels move the soul.</span>
+        </div>
+        <div id="Social-Media-Buttons">
+						<a class="Social-Button Instagram-Button" target="blank" href="https://www.instagram.com/socal_rider/">
+					      <i class="fab fa-instagram"></i>
+					    </a>
+					    <a class="Social-Button Facebook-Button" target="blank" href="#">
+					      <i class="fab fa-facebook-f"></i>
+					    </a>
+					    <a class="Social-Button Youtube-Button" target="blank" href="https://www.youtube.com/channel/UCJn_Mqjq7GFxY1whllXrxRQ">
+					      <i class="fab fa-youtube"></i>
+					    </a>
+					    <a class="Social-Button Pinterest-Button" target="blank" href="#">
+					      <i class="fab fa-pinterest"></i>
+					    </a>
+					</div>
+                <div class="Header-Navigation-Container">
+		 		<div class="Navigation-Bar" id="Navigation-Meterbar">
+					<div class="Meter Meterbar-1" id="position1"></div>
+				 	<div class="Meter Meterbar-1" id="position2"></div>
+					<div class="Meter Meterbar-1" id="position3"></div>
+					<div class="Meter Meterbar-1" id="position4"></div>
+					<div class="Meter Meterbar-1" id="position5"></div>
+					<div class="Meter Meterbar-1" id="position6"><a class="Header-Navigation-Link" id="Home" href=""> Home </a></div>
+					<div class="Meter Meterbar-1" id="position7"></div>
+				 	<div class="Meter Meterbar-1" id="position8"></div>
+				 	<div class="Meter Meterbar-1" id="position9"></div>
+					<div class="Meter Meterbar-1" id="position10"></div>
+					<div class="Meter Meterbar-1" id="position11"></div>
+					<div class="Meter Meterbar-1" id="position12"><a class="Header-Navigation-Link" id="Roads" href="">Roads</a></div>
+					<div class="Meter Meterbar-1" id="position13"></div>
+					<div class="Meter Meterbar-1" id="position14"></div>
+					<div class="Meter Meterbar-1" id="position15"></div>	
+					<div class="Meter Meterbar-1" id="position16"></div>
+					<div class="Meter Meterbar-1" id="position17"></div>
+					<div class="Meter Meterbar-1" id="position18"></div>
+					<div class="Meter Meterbar-1" id="position19"></div>
+					<div class="Meter Meterbar-1" id="position20"><a class="Header-Navigation-Link" id="Places" href="">Explore</a></div>
+					<div class="Meter Meterbar-1" id="position21"></div>
+					<div class="Meter Meterbar-1" id="position22"></div>
+					<div class="Meter Meterbar-1" id="position23"></div>
+					<div class="Meter Meterbar-1" id="position24"></div>
+					<div class="Meter Meterbar-2" id="position25"></div>
+					<div class="Meter Meterbar-2" id="position26"></div>
+					<div class="Meter Meterbar-2" id="position27"><a class="Header-Navigation-Link" id="Events" href="">Events</a></div>
+					<div class="Meter Meterbar-2" id="position28"></div>
+					<div class="Meter Meterbar-2" id="position29"></div>
+					<div class="Meter Meterbar-2" id="position30"></div>
+					<div class="Meter Meterbar-2" id="position31"></div>
+					<div class="Meter Meterbar-2" id="position32"></div>
+					<div class="Meter Meterbar-2" id="position33"></div>
+					<div class="Meter Meterbar-2" id="position34"><a class="Header-Navigation-Link" id="Groups" href="">Groups</a></div>
+					<div class="Meter Meterbar-2" id="position35"></div>
+					<div class="Meter Meterbar-2" id="position36"></div>
+					<div class="Meter Meterbar-3" id="position37"></div>
+					<div class="Meter Meterbar-3" id="position38"></div>
+					<div class="Meter Meterbar-3" id="position39"></div>
+					<div class="Meter Meterbar-3" id="position40"></div>
+					<div class="Meter Meterbar-3" id="position41"><a class="Header-Navigation-Link" id="Store" href="">Store</a></div>
+					<div class="Meter Meterbar-3" id="position42"></div>
+					<div class="Meter Meterbar-3" id="position43"></div>
+					<div class="Meter Meterbar-3" id="position44"></div>
+					<div class="Meter Meterbar-3" id="position45"></div>
+					<div class="Meter Meterbar-3" id="position46"></div>
+					<div class="Meter Meterbar-3" id="position47"></div>
+					<div class="Meter Meterbar-3" id="position48"><a class="Header-Navigation-Link" id="More" href="">About</a></div>
+			    </div>
+	 		</div>
+    </header>
+    <aside>
+		
+				<a id="About-Link" href="">
+					<div id="About-Container">
+						<img id="About-photo" src="/SocalRider/imgs/About.jpg">
+						<h3>Welcome</h3>
+			 			<p>My names Frank, I moved to Los Angeles in 2015 and fell in love with the riding around here. Come with me as I explore Southern California two wheels at a time.</p>
+		 			</div>
+	 			</a>
+				<a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/" data-label_1="LOS ANGELES" data-label_2="WEATHER" data-days="3" data-theme="original" >LOS ANGELES WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<div id="Local-Events-Container">
+					<h1>Local Events</h1>
+					<div class="Local-Events-Thumbnail">
+						<div class="Events-Thumbnail-Date">
+							<h2>9</h2>
+							<h3>APR</h3>
+						</div>
+						<img src="/SocalRider/imgs/Route66 local.jpg">
+						<div id="Events-Thumbnail-Info">
+						<p class="Events-Info-Title">The Mother Road</p>
+						<p class="Events-Info-Group">Historical Adventures</p>
+						<p class="Events-Thumbnail-Location">Los Angeles</p>
+						</div>
+					</div>
+				<br>
+				<br>
+					<div class="Local-Events-Thumbnail">
+						<div class="Events-Thumbnail-Date">
+							<h2>25</h2>
+							<h3>APR</h3>
+						</div>
+						<img src="/SocalRider/imgs/wilson.png">
+						<div id="Events-Thumbnail-Info">
+						<p class="Events-Info-Title">Mt Wilson Ride</p>
+						<p class="Events-Info-Group">Hit the Twisties</p>
+						<p class="Events-Thumbnail-Location">Los Angeles</p>
+						</div>
+					</div>
+				<br>
+				<br>
+					<div class="Local-Events-Thumbnail">
+						<div class="Events-Thumbnail-Date">
+							<h2>1</h2>
+							<h3>MAY</h3>
+						</div>
+						<img src="/SocalRider/imgs/hoover-dam-dawn.jpg">
+						<div id="Events-Thumbnail-Info">
+						<p class="Events-Info-Title">Hoover Dam</p>
+						<p class="Events-Info-Group">Historical Adventures</p>
+						<p class="Events-Thumbnail-Location">Las Vegas</p>
+						</div>
+					</div>
+				<br>
+				<br>
+					<div class="Local-Events-Thumbnail">
+						<div class="Events-Thumbnail-Date">
+							<h2>15</h2>
+							<h3>JUN</h3>
+						</div>
+						<img src="/SocalRider/imgs/san fran.jpg">
+						<div id="Events-Thumbnail-Info">
+						<p class="Events-Info-Title">LA to SF</p>
+						<p class="Events-Info-Group">Weekend Warriors</p>
+						<p class="Events-Thumbnail-Location">Los Angeles</p>
+						</div>
+					</div>
+				<br>
+				<br>
+					<div class="Local-Events-Thumbnail">
+						<div class="Events-Thumbnail-Date">
+							<h2>4</h2>
+							<h3>JUL</h3>
+						</div>
+						<img src="/SocalRider/imgs/trees.jpg">
+						<div id="Events-Thumbnail-Info">
+						<p class="Events-Info-Title">Sequoia NP</p>
+						<p class="Events-Info-Group">LA Moto Club</p>
+						<p class="Events-Thumbnail-Location">Los Angeles</p>
+						</div>
+					</div>
+				</div>
+				<div id="Shop-Link-Section">
+					<h2 >Socal Shop</h2>
+					<a href="">
+						<div id="Shop-Link-Container">
+							<div id="Shop-Link"> 
+							</div>
+							<div id="Shop-Link-Textbox">
+								<h2>Browse Store</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+	</aside>
+    <main>
+        <div id="Slideshow-Container">
+				    <div id="Slideshow">
+						<figure>
+								<div class="Slide-1-Image Slide">
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+											<h3>Waterfalls of Angeles NF <i class="fas fa-angle-right"></i></h3> 
+											<p>Check out all 11 waterfall hikes in Angeles National forest</p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+								<div class="Slide-2-Image  Slide">
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+										    <h3>Waterfalls of Angeles NF <i class="fas fa-angle-right"></i></h3>
+											<p>Check out all 11 waterfall hikes in Angeles National forest</p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+								<div class="Slide-3-Image Slide">
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+											<h3>Las Vegas Road Trip <i class="fas fa-angle-right"></i></h3>
+											<p>13 things to see between L.A and Vegas <a href=""><i class="far fa-arrow-alt-circle-right"></i>Continue Reading</a> </p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+								<div class="Slide-4-Image Slide">
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+											<h3>Lake Isabella <i class="fas fa-angle-right"></i></h3>
+											<p>Day trip up though the central valley to Lake Isabella</p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+								<div class="Slide-5-Image Slide">
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+											<h3>Find a Group <i class="fas fa-angle-right"></i></h3>
+											<p>Connect to other Riders in and around California, or start your own group.</p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+								<div class="Slide-1-Image Slide">	
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+											<h3>Find a Group <i class="fas fa-angle-right"></i></h3>
+											<p>Connect to other Riders in and around California, or start your own group.</p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+								<div class="Slide-1-Image Slide">
+									<div id="Text-Box-Container">
+										<div id="Slide-Text-Box">
+											<h3>Angels Crest Highway <i class="fas fa-angle-right"></i></h3>
+											<p>Check out all 11 waterfall hikes in Angeles National forest</p>
+										</div>
+									</div>
+									<a  id="Slideshow-Link" href=""></a>
+								</div>
+						</figure>
+					</div>
+				</div>
+                <div id="Recent-Rides-Container">
+					<h1 id="Recent-Rides-Heading"> Recent Rides</h1>
+					<a href="">
+						<div class="Recent-Ride_Thumbnail RR-Thumbnail-Image-1">
+							<h2>8 to Yuma</h2>
+							<img class="thumbnailimg" src="/SocalRider/imgs/I-8.svg.png">
+							<p>Expore picturesque sand dunes along the southern border of california, starting from San Diego all the way to Yuma, AZ.</p>
+						</div>
+					</a>
+					<a href="">
+						<div class="Recent-Ride_Thumbnail RR-Thumbnail-Image-2">
+							<h2>PCH Malibu</h2>
+							<img class="thumbnailimg" src="/SocalRider/imgs/California_1.svg.png">
+							<p>Spend your weekend along the PCH in Malibu, 23 miles of some of the most beautiful coastline. in the world.  </p>
+						</div>
+					</a>
+					<a href="">
+						<div class="Recent-Ride_Thumbnail RR-Thumbnail-Image-3">
+							<h2>Mulholland</h2>
+							<img class="thumbnailimg" src="/SocalRider/imgs/mull.png">
+							<p>Take a ride through the Hollywood hills. Enjoy stunning views of the Los Angeles Basin and  San Fernando Valley as you weave through some of the most expensive homes in the world. </p>
+						</div>
+					</a>
+				</div>
+				<div id="Exploring-Places-Container">
+						<h1 id="Exploring-Places-Header">Recent Places of Interest</h1>
+							<a href="">
+								<div class="Places-Thumbnail P1">
+									<div id="Places-Textbox-Container">
+										<div id="Places-Textbox">
+											<h2>Neptune's Net</h2>
+											<p>Neptune's Net is a popular seafood restaurant located in Malibu, Los Angeles, known for its fresh seafood and classic beachside ambiance. It's a favored spot for both locals and visitors, offering stunning ocean views alongside its iconic biker-friendly atmosphere.
+											</p>
+								    	</div>
+								    </div>
+								</div>
+							</a>
+						    <a href="">
+								<div class="Places-Thumbnail P2">
+									<div id="Places-Textbox-Container">
+										<div id="Places-Textbox">
+											<h2>Newcomb's Ranch</h2>
+										    <p>Newcomb's Ranch is a renowned restaurant and bar nestled in the San Gabriel Mountains along the Angeles Crest Highway, near Los Angeles. It serves as a welcoming haven for motorcyclists, hikers, and nature lovers.
+											</p>
+									    </div>
+								    </div>
+								</div>
+							</a>
+
+						     <a href="">
+								<div class="Places-Thumbnail P3">
+									<div id="Places-Textbox-Container">
+										<div id="Places-Textbox">
+											<h2>The Rock Store</h2>
+										    <p>The Rock Store is one of the most famous motorcycle hangouts in California, located on Mulholland Highway in the Santa Monica Mountains. This historic venue, housed in a building dating back to the 1920s.
+											</p>
+									    </div>
+								    </div>
+								</div>
+							</a>
+
+				    </div>
+					<div id="Map-Container">
+			    	<h1>Routes Map</h1>
+			    	<div>
+			    	<div id="Routes-Map">	
+					</div>
+				<div id="Popular-Routes">
+					<h2>Popular Routes</h2>
+					<h5>User Rated</h5>
+					<div id="Popular-Thumbnail-Container">
+						<a class="Popular-Thumbnail-Link" href="">
+							<div class="Popular-Thumbnail  PT1">
+								<h3>Angeles Crest Highway</h3>
+								<h4></i>4.8<i class="far fa-star"></i></h4>
+							</div>
+						</a>
+						<a class="Popular-Thumbnail-Link" href="">
+							<div class="Popular-Thumbnail PT2">
+								<h3>Ortega Highway</h3>
+								<h4></i>4.7<i class="far fa-star"></i></h4>
+							</div>
+						</a>
+						<a class="Popular-Thumbnail-Link" href="">
+							<div class="Popular-Thumbnail PT3">
+								<h3>Palomar Mountain</h3>						
+								<h4></i>4.5<i class="far fa-star"></i></h4>
+							</div>
+						</a>
+						<a class="Popular-Thumbnail-Link" href="">
+							<div class="Popular-Thumbnail PT4">
+									<h3>PCH Malibu</h3>	
+									<h4></i>4.3<i class="far fa-star"></i></h4>
+							</div>
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+    </main>
+	<footer>
+					<div class="Footer-Container" id="FC1">
+						<h1>Menu</h1>
+						<ul>
+							<li><a href="blank"><i class="fas fa-home"></i>   Home</a></li>
+							<li><a href="blank"><i class="fas fa-road"></i>   Roads</a></li>
+
+							<li><a href="blank" ><i id="Explore-Icon" class="fas fa-hiking"></i>Explore</a></li>
+							<li ><a href="blank"><i id="Events-Icon" class="far fa-calendar-alt"></i>Events</a></li>
+							<li><a href="blank"><i class="fas fa-users"></i>   Groups</a></li>
+							<li><a href="blank"><i id="Tours-Icon" class="fas fa-map-marked"></i>   Tours</a></li>
+							<li><a href="blank"><i id="Store-Icon" class="fas fa-shopping-cart"></i>   Store</a></li>
+							<li><a href="blank"><i id="About-Icon" class="fas fa-info"></i>   About</a></li>
+						</ul>
+						
+					</div>
+					<div class="Footer-Container"id="Footer-Container-Middle">
+						<img id="Footer-Logo" src="/SocalRider/imgs/socal logo copy.png" alt="Socal Logo">
+						<small>&copy; Copyright 2020, Socal Rider</small>
+					</div>
+					<div class="Footer-Container"id="FC3">
+						<h1>Connect with us</h1>
+						<p>Sign up to get updates and event information from Socal Rider!</p>
+						<form   action="/action_page.php">
+                        <input id="Email-Form" type="email" placeholder ="Email" name="email">
+                        <input id="Email-Submit-Button" type="submit">
+						</form>
+						<a id="Send-Email-Link" href="mailto:someone@yoursite.com"><i class="fas fa-envelope"></i> SocalRider18@gmail.com</a>
+						<div id="Footer-Social-Buttons">
+							<i class="fab fa-facebook-square"></i>
+							<i class="fab fa-youtube-square"></i>
+							<i class="fas fa-camera-retro"></i>
+							<i class="fab fa-pinterest-square"></i>
+						</div>
+					</div>
+		</footer>
+</div>
+
+</body>
+</html>

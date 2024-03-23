@@ -1,0 +1,1382 @@
+@font-face {
+  font-family: 'quote';
+  src: url(/SocalRider/Fonts/Love\ Story\ Rough.ttf);
+  }
+
+  @font-face {
+  font-family: 'digital';
+  src: url('/SocalRider/Fonts/DS-DIGI.TTF');
+  }
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 0;
+    background-image: url(/SocalRider/imgs/PCH.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "content aside"
+        "footer footer";
+        column-gap: 2vw;
+        row-gap: 5vw;
+    grid-template-columns: 1fr 23vw;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+/*-------------------------Header--------------------- */
+header {
+    grid-area: header;
+    height: 15vw;
+    position: relative;
+    align-content: center;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    background-image: url(/SocalRider/imgs/SOCAL\ WS\ HEADER.png);
+    background-size: cover;
+}
+
+#title-tag-cont {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#title-tag-cont img {
+    height: 12vw;
+}
+#title-tag-cont span {
+    color: yellow;
+    font-family: quote, helvetica;
+    font-size:3vw;
+    
+}
+
+main {
+    grid-area: content;
+
+}
+
+aside {
+    grid-area: aside;
+}
+/*---------------social media buttons------------------- */
+#Social-Media-Buttons {
+  background: rgb(255, 255, 255, .5);
+  height: 15vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  }
+
+.Social-Button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  font-size: 2vw;
+  text-decoration: none;
+  width: 4vw;
+  height: 3.75vw;
+  position: relative;
+  }
+
+.Social-Button i {
+  padding-top: .6vw;
+  }
+
+.Facebook-Button {
+  color: #3b5998;
+  }
+
+.Facebook-Button:hover {
+  color:white;
+  background-color: #3b5998;
+  font-size: 2.5vw;
+  }
+
+.Youtube-Button {
+  color: #c4302b;
+  }
+
+.Youtube-Button:hover {
+  color:white;
+  background-color: #c4302b;
+  font-size: 2.5vw;
+  }
+
+.Instagram-Button i {
+  padding-top: .6vw;
+  }
+
+.fa-instagram {
+  font-size: 2.5vw;
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;      
+  -webkit-text-fill-color: transparent;
+  }
+
+.fa-instagram:hover {
+  font-size: 2.5vw;
+  padding-bottom: .9vw;
+  -webkit-text-fill-color: white;
+  }
+
+.Instagram-Button {
+  color: #f09433;
+  }
+
+.Instagram-Button:hover {
+  color: white;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  font-size: 2.5vw;
+  }
+
+.Pinterest-Button {
+  color: #c8232c;
+  }
+
+.Pinterest-Button:hover {
+  color:white;
+  background-color: #c8232c;
+  font-size: 2.5vw;
+  }
+
+
+/*--------------------------------- << MOBLE-SOCIAL-BUTTONS  ------------------------------------*/
+
+
+.Social-Buttons-Moble-Container {
+  width: 100%;
+  background: rgb(255, 255, 255, .5);
+  height: 8vw;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  }
+
+
+#Facebook-Moble-Button {
+  width: 8vw;
+  height: 8vw;
+  display: inline-block;
+  float: left;
+  }
+
+
+#Facebook-Moble-Button i {
+  font-size: 5vw;
+  padding-top: 1.5vw;
+  }
+
+
+#Facebook-Moble-Button i:hover {
+  color:white;
+  }
+
+
+#Facebook-Moble-Button:hover {
+  background-color: #3b5998;
+  }
+
+
+#Youtube-Moble-Button {
+  width: 8vw;
+  height: 8vw;
+  display: inline-block;
+  float: right;
+  }
+
+
+#Youtube-Moble-Button i {
+  font-size: 5vw;
+  padding-top: 1.5vw;
+  color: #c8232c;
+  }
+
+
+#Youtube-Moble-Button i:hover {
+  color:white;
+  }
+
+
+#Youtube-Moble-Button:hover {
+  background-color: #c8232c;
+  }
+
+
+
+#Pinterest-Moble-Button {
+  width: 8vw;
+  height: 8vw;
+  display: inline-block;
+  float: right;
+  }
+
+
+#Pinterest-Moble-Button i {
+  font-size: 5vw;
+  padding-top: 1.5vw;
+  color: #c8232c;
+  }
+
+
+#Pinterest-Moble-Button i:hover {
+  color:white;
+  }
+
+
+#Pinterest-Moble-Button:hover {
+  background-color: #c8232c;
+  }
+
+
+#Instagram-Moble-Button {
+  width: 8vw;
+  height: 8vw;
+  display: inline-block;
+  float: left;
+  }
+
+
+#Instagram-Moble-Button i {
+  font-size: 5vw;
+  padding-top: 1.5vw;
+  }
+
+
+#Instagram-Moble-Button i:hover {
+  color:white;
+  }
+
+
+#Instagram-Moble-Button:hover {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);   /*--------------------- FIX REMOVE WEBKIT-----*/
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+
+  .Header-Navigation-Container {
+  background: #6A6A6A;
+  display: inline-block;
+  top: 13vw;
+  left: 22.5vw;
+  height: 4vw;;
+  z-index: 4;
+  position: absolute;
+  clip-path: polygon(98% 0, 100% 50%, 98% 100%, 2% 100%, 0 50%, 2% 0);
+  max-width: 80%;
+  }
+
+
+.Navigation-Bar {
+  width: 53vw;
+  transform: skew(-20deg);
+  background: transparent;
+  display: flex;
+  margin-top: -.15vw;
+  margin-left: 3vw;
+  z-index: 4;
+  }
+
+
+.Meter{
+  width: 1.04vw;
+  height: 3vw;
+  transform: skew(4deg);
+  background: #7A7A7A;
+  position: relative;
+  transform: translate(20%, 20%);
+  }
+
+.hover1{
+  background: #7ECB75;
+  }
+
+.hover2{
+  background:  #ffea82;
+  }
+
+.hover3{
+  background:  #ff6b6b;
+  }
+
+.Header-Navigation-Link{
+  font-family: 'digital';
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+    top:  .6vw;
+    left: 2vw;
+  font-size: 1.7vw;
+  }
+
+#position6 {
+  z-index: 5;
+  }
+
+#Home {
+  margin-left: -5.5vw;
+  }
+
+.Header-Navigation-Link:hover {
+  color: #767676;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  }
+
+#position12 {
+  z-index: 5;
+  }
+
+#Roads {
+  margin-left: -6.3vw;
+  }
+
+#position20 {
+  z-index: 5;
+  }
+
+#Places{
+  margin-left: -8.3vw;
+  }
+
+#position27 {
+  z-index: 5;
+  }
+
+#Events{
+  margin-left: -7.2vw;
+  }
+
+#position34 {
+  z-index: 5;
+  }
+
+#Groups{
+  margin-left: -6.4vw;
+  }
+
+#position41 {
+  z-index: 5;
+  }
+
+#Store{
+  margin-left: -6vw;
+  }
+
+#position48 {
+  z-index: 5;
+  }
+
+#More{
+  margin-left: -6.5vw;
+  }
+
+  /* -------slider----- */
+  #Slideshow-Container{
+
+  width: 100%;
+  height: 30vw;
+  padding: 0;
+  overflow: hidden;
+  }
+
+  #Slideshow-Link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+
+#Slideshow figure {
+
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s Slideshow infinite;
+  }
+
+
+#Slideshow figure img {
+
+  width: 20%;
+  }
+
+
+
+@keyframes Slideshow {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+
+
+.Slide-1-Image {
+  
+  background-image: url(/SocalRider/imgs/eaton-canyon-16.jpg);
+  background-size: cover;
+  width: 20%;
+  height: 30vw;
+  float: left;
+  position: relative;
+  }
+
+
+
+.Slide-2-Image {
+  
+  background-image: url(/SocalRider/imgs/eaton-canyon-16.jpg);
+  background-size: cover;
+  width: 20%;
+  height: 30vw;
+  float: right;
+  position: relative;
+  }
+
+
+.Slide-3-Image {
+  
+  background-image: url(/SocalRider/imgs/vegas.jpeg);
+  background-size: cover;
+  width: 20%;
+  height: 30vw;
+  float: right;
+  position: relative;
+  }
+
+
+.Slide-4-Image {
+  background-image: url(/SocalRider/imgs/Lake\ Isa.jpeg);
+  background-size: cover;
+  width: 20%;
+  height: 30vw;
+  float: right;
+  position: relative;
+  }
+
+
+.Slide-5-Image {
+  background-image: url(/SocalRider/imgs/find\ a\ group.jpeg);
+  background-size: cover;
+  width: 20%;
+  height: 30vw;
+  float: right;
+  position: relative;
+  }
+
+
+#Text-Box-Container {
+
+  width: 80%;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-color: #d1cb1be6;
+  color: white;
+  position: absolute;
+ padding-right: 2vw;
+  opacity: .9;
+  overflow: visible;
+  clip-path: polygon(100% 50%, 100% 100%, 25% 100%, 50% 50%);
+  
+  overflow: hidden;
+  }
+
+#Text-Box-Container h3 {
+  
+  top: 50%;
+  left: 50%;
+  font-family: helvetica;
+  font-size: 1.9vw;
+  color: #535353;
+  text-align:center;
+  font-weight: lighter;
+  }
+
+#Slide-Text-Box p {
+ 
+  bottom: 0;
+  left: 0;
+  float: left;
+  color: black;
+  padding: 2%;
+  font-family: helvetica;
+  color: #a2487e;
+  font-size :1.5vw;
+   width: 100%;
+  height: 100%;
+  font-weight: lighter;
+  }
+
+#Slide-Text-Box a {
+
+  text-decoration: none;
+  color: #EBE99D;
+  text-decoration: underline;
+  }
+
+
+#Slide-Text-Box {
+  
+  position: absolute;
+  bottom: 0;
+  right: 1.5vw;
+  width: 50%;
+  height: 50%;
+  }
+
+  /* ----------Recent rides----------- */
+  #Recent-Rides-Container {
+    width: 100%;
+  margin-top: 5vw;
+  display: block;
+  }
+
+#Recent-Rides-Heading  {
+
+  justify-content: right;
+  text-align: left;
+  font-family: quote , helvetica;
+  color: #161616;
+  font-weight: lighter;
+  font-size: 4.0vw;
+  }
+
+.Recent-Ride_Thumbnail {
+
+  position: relative;
+  font-family: helvetica;
+  text-align: center;
+  width: 14vw;
+  height: 27vw;
+  float: left;
+  margin: 1vw;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
+  
+  border-radius: .5vw;
+  padding: 1vw;
+  color: #ffff94;
+  }
+
+.Recent-Ride_Thumbnail:hover { 
+
+  transform: scale(1.05); 
+  box-shadow: -10px 10px 5px grey;
+  }
+
+
+.RR-Thumbnail-Image-1 {
+
+  background-image: url(/SocalRider/imgs/sand\ dunes.jpeg);
+  background-size: cover; 
+  }
+
+
+.RR-Thumbnail-Image-2 {
+
+  background-image: url(/SocalRider/imgs/pch\ malibu.jpeg);
+  background-size: cover;
+  }
+
+
+.RR-Thumbnail-Image-3 {
+
+  background-image: url(/SocalRider/imgs/mullholland.jpeg);
+  background-size: cover;
+  background-position: center;
+  }
+
+
+
+
+.thumbnailimg {
+
+  max-width: 100%;
+  max-height: 10vw;
+  }
+
+
+.Recent-Ride_Thumbnail h2 {
+
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 2vw;
+  margin-bottom: 3vw;
+  }
+
+.Recent-Ride_Thumbnail p {
+
+  position: absolute;
+  bottom: 0;
+  font-size: 1.3vw;
+  margin-right: .5vw;
+  }
+
+
+  #Exploring-Places-Container {
+
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  }
+
+
+#Exploring-Places-Container a {
+  text-decoration: none;
+  }
+
+#Exploring-Places-Container h1 {
+
+  text-align: left;
+  font-family: quote , helvetica;
+
+  color: #161616;
+  font-weight: lighter;
+  font-size: 4vw;
+  }
+
+.Places-Thumbnail {
+
+  width: 100%;
+  height: 15vw;
+  border-radius: 1vw; 
+  text-decoration: none;
+  }
+
+.P1 {
+
+  background-image: url(/SocalRider/imgs/Neptunes.jpeg);
+  background-position:left;
+  }
+
+
+.P2 {
+
+   background-image: url(/SocalRider/imgs/newcombs.webp);
+  background-size: cover;
+  background-position: left;
+  }
+
+
+.P3 { 
+
+  background-image: url(/SocalRider/imgs/rock\ .jpeg);
+  
+  
+  }
+
+
+#Places-Textbox-Container {
+
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+  background: #703660;
+  width: 100%;
+  height: 100%;
+  margin-right: 0vw;
+  border-radius: 0px 1vw 1vw 0px;
+  text-align: right;
+  text-decoration: none;
+  
+  }
+
+#Places-Textbox h2 {
+
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 2.6vw;
+  padding-top: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+  color: #EBE99D;
+  text-align: right;
+  }
+
+#Places-Textbox p {
+
+  font-family: helvetica;
+  width: 45%;
+  text-align: justify;
+  float:right;
+  margin-right: 2vw;
+  color: white;
+  font-size: 1vw;
+  }
+
+#Places-Textbox {
+
+  width: 100%;
+  height: 100%; 
+  display: block;
+  }
+
+  /* ---------routes------------- */
+  #Map-Container {
+  margin-top: 2vw;
+  width: 100%;
+  display: inline-block;
+  }
+
+#Map-Container h1 {
+
+  text-align: left;
+  font-family: quote , helvetica;
+  color: #161616;
+  font-weight: lighter;
+  font-size: 3.0vw;
+  display: inline-block;
+  }
+
+
+#Routes-Map { 
+
+  width: 50%;
+  height: 30vw;
+  background-image: url(/SocalRider/imgs/Map.png);
+  background-size: cover;
+  float: left;
+  }
+
+
+#Popular-Routes {
+
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 30vw;
+  text-align: center;
+  }
+
+
+#Popular-Routes h2 {
+  font-family: quote , helvetica;
+  color: #161616;
+  font-size: 3.0vw;
+  margin-top:0 ;
+  margin-bottom: 0;
+  font-weight: lighter;
+  }
+
+  
+ #Popular-Routes h5 {
+  font-family: helvetica;
+  color: #3E3E3E;
+  font-size: 1vw;
+  margin-top:0 ;
+  font-weight: lighter;
+  text-align: center;
+  }
+
+
+#Popular-Thumbnail-Container {
+    
+  display: inline-block;
+  bottom: 0;
+  width:90%;
+  height: 80%;
+  }
+
+
+.Popular-Thumbnail-Link {
+
+  text-decoration:none !important;
+  }
+
+
+  .Popular-Thumbnail {
+
+  width: 100%;
+  position: relative;
+  height: 20%;
+  background-color: grey;
+  border-radius: .7vw;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  text-decoration:none;
+  margin-bottom: 1vw;
+  }
+
+
+.Popular-Thumbnail:hover { 
+
+  transform: scale(1.02); 
+  box-shadow: -8px 8px 6px grey;
+  }
+
+
+.Popular-Thumbnail h3 {
+
+  display: inline-block;
+  float: left;
+  color: #EBE99D;
+  width: 70%;
+  height: 50%;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 1.4vw;
+  text-align: left;
+  margin-left: 1.5vw;
+  }
+
+
+ .Popular-Thumbnail i {
+  
+  font-size: 1.5vw;
+  font-weight: lighter;
+  color: #EBE99D;
+  clear:none;
+  }
+
+
+ .Popular-Thumbnail h4 {
+
+  right: 0;
+  width: 25%;
+  float: right;
+  display: inline-block;
+  font-size: 2vw;
+  margin:auto;
+  text-align: right;
+  height: 100%;
+  font-weight: lighter;
+  color: #EBE99D;
+  font-family: Helvetica;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  text-decoration:none !important;
+  }
+
+.PT1 {
+
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0) 40%, rgba(0,0,6,0.46122198879551823) 57%, rgba(0,0,2,0.8645833333333334) 76%, rgba(0,0,0,1) 100%) ,  url(/SocalRider/imgs/ach.jpg);
+  background-size: cover;
+  background-position: bottom;
+  }
+
+
+.PT2 {
+  
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0) 40%, rgba(0,0,6,0.46122198879551823) 57%, rgba(0,0,2,0.8645833333333334) 76%, rgba(0,0,0,1) 100%) ,  url(/SocalRider/imgs/ortega.jpg);
+  background-size: cover;
+  background-position: center; 
+}
+
+
+.PT3 {
+
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0) 40%, rgba(0,0,6,0.46122198879551823) 57%, rgba(0,0,2,0.8645833333333334) 76%, rgba(0,0,0,1) 100%) ,  url(/SocalRider/imgs/palomar-observatory-night-under-milky-way-photo-29348-43232.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  }
+
+
+.PT4 {
+ 
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0) 40%, rgba(0,0,6,0.46122198879551823) 57%, rgba(0,0,2,0.8645833333333334) 76%, rgba(0,0,0,1) 100%) ,  url(/SocalRider/imgs/Malibupch.jpg);
+  background-size: cover;
+  background-position: top; 
+  }
+
+
+  #About-Heading {
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 3vw;
+  }
+
+
+#About-Container {
+
+ 
+  background-color:pink;
+  border-radius: 1vw;
+  overflow: hidden;
+  margin-bottom: 2vw;
+  background: #3E3E3E;
+  }
+
+#About-photo {
+  width: 100%;
+  }
+
+
+#About-Link {
+
+  text-decoration: none;
+  }
+
+
+#About-Container p {
+
+  
+  margin-left: 2vw;
+  margin-right: 2vw;
+  text-align: justify;
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 1vw;
+  color:#EBE99D;
+  }
+  #About-Container h3 {
+    text-decoration: none;
+    color: #EBE99D ;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    font-family: Helvetica, sans-serif;
+  }
+
+/*------------------ << WEATHER WIDGET  ---------------------*/
+
+
+.weatherwidget-io {
+
+  border-radius: 1vw;
+  }
+/* -----local events-------------- */
+  #Local-Events-Container {
+ 
+  border-radius: .5vw;
+  font-family: helvetica;
+  font-weight: lighter;
+  color: #3E3E3E;
+  padding-top: .5vw;
+  }
+
+
+#Local-Events-Container h1 {
+
+  font-family: quote , helvetica;
+  color: #161616;
+  font-size: 3vw;
+  }
+
+
+
+.Local-Events-Thumbnail {
+  display: inline-block;
+  width: 100%;
+  background: #3E3E3E;
+  border-radius: .5vw;
+  overflow: hidden;
+  }
+
+
+.Local-Events-Thumbnail:hover { 
+  transform: scale(1.02); 
+  box-shadow: -8px 8px 5px grey;
+  }
+
+
+.Local-Events-Thumbnail img {
+
+  float: left;
+  width: 5.59vw;
+  height: 5.59vw;
+  }
+
+
+.Events-Thumbnail-Date {
+
+  width: 5vw;
+  height: 100%;
+  text-align: center;
+  float: left;
+  background: #272727;
+  font-family: helvetica;
+  padding: .5vw;
+  }
+
+
+.Events-Thumbnail-Date h2 {
+
+  font-size: 2.5vw;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  color: #EBE99D;
+  font-family: helvetica;
+  }
+
+
+.Events-Thumbnail-Date h3 {
+
+  font-size: 1.5vw;
+  margin: 0;
+  font-weight: lighter;
+  color: #EBE99D;
+  padding: 0;
+  font-family: helvetica;
+  }
+
+
+  #Events-Thumbnail-Info {
+
+  text-align: right;
+  float: right;
+  padding: 1vw;
+  }
+
+
+  #Events-Thumbnail-Info p {
+  
+  margin: 0;
+  color: #EBE99D;
+  font-family: Helvetica;
+  }
+
+
+.Events-Info-Title {
+
+  font-size: 1.2vw;
+  }
+
+
+.Events-Info-Group {
+
+  font-size: 1vw;
+  font-weight: lighter;
+  }
+
+
+.Events-Thumbnail-Location {
+
+  font-size: .9vw;
+  font-weight: lighter;
+  }
+
+/* ----shop link----- */
+#Shop-Link {
+
+  width: 100%;
+  height: 25vw;
+  border-radius: .7vw;
+  background-image: url("/SocalRider/imgs/shop.png");
+  background-size: cover;
+  }
+
+
+#Shop-Link-Section h2 {
+
+  display: block;
+  font-family: quote , helvetica;
+  font-size: 4vw;
+  font-weight: lighter;
+  color: #161616;
+  text-decoration: none !important;
+  }
+
+
+#Shop-Link-Textbox {
+
+  background:  #3E3E3E;
+  height: 101%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: .7vw;
+  clip-path: polygon(0 84%, 100% 58%, 100% 100%, 0% 100%);
+  }
+
+
+#Shop-Link-Textbox h2 {
+  
+  position: absolute;
+  bottom: .5vw;
+  right: 2vw;
+  font-size: 2.3vw;
+  font-family: helvetica;
+  color: #EBE99D;
+  }
+
+
+ #Shop-Link-Container:hover { 
+
+  transform: scale(1.02); 
+  box-shadow: -10px 10px 5px grey;
+  }
+
+
+ #Shop-Link-Container {
+  
+  height: 100%;
+  width: 100%;
+  background: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-radius: .7vw;
+  }
+
+  footer {
+
+ 
+  margin-left: -10vw;
+  margin-right: -10vw;
+  grid-area: footer;
+  background: #3E3E3E ;
+  bottom:0;
+  padding-bottom: 2vw;
+  }
+  
+footer h1 {
+
+  font-family: helvetica;
+  font-size: 1.5vw;
+  color: #EBE99D;
+  margin-left: 3vw;
+  }
+
+
+.Footer-Container p {
+
+  font-size: 1.2vw;
+  font-family: helvetica;
+  color: #EBE99D;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  }
+
+
+.Footer-Container ul {
+
+  list-style: none;
+  margin-left: 3vw;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  }
+
+
+.Footer-Container ul li{
+
+ margin-bottom: 1vw;
+ }
+
+
+.Footer-Container ul li a {
+
+  text-decoration: none;
+  color: #EBE99D;
+  font-size: 1.4vw;
+  font-family: helvetica;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  }
+
+
+.Footer-Container ul li  i {
+
+  text-decoration: none;
+  color: #EBE99D;
+  font-size: 1.5vw;
+  margin-right: 1vw;
+  }
+
+
+.Footer-Container {
+
+  display: block;
+  width: 33%;
+  float: left;
+  margin-top: 2vw;
+  }
+
+
+#Footer-Logo {
+
+  display: block;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+
+#Footer-Social-Buttons {
+   
+  width: auto;
+  margin-top: .5vw;
+  height: auto;
+  overflow:auto;
+  text-align: center
+  }
+
+
+.fa-facebook-square {
+
+  font-size: 2.5vw;
+  height: 2vw;
+  padding: .3vw;
+  color: #EBE99D;
+  }
+
+
+.fa-youtube-square {
+
+  font-size: 2.5vw;
+  height: 2vw;
+  padding: .3vw;
+  color: #EBE99D;
+  }
+
+
+.fa-camera-retro {
+
+  font-size: 2.5vw;
+  height: 2vw;
+  padding: .3vw;
+  color: #EBE99D;
+  }
+
+
+.fa-pinterest-square {
+  font-size: 2.5vw;
+  height: 2vw;
+  padding: .3vw;
+  color: #EBE99D;
+  }
+
+
+
+
+
+#Explore-Icon {
+
+  margin-left: .3vw;
+  padding-right: .6vw;
+  }
+
+
+#Explore-Icon a {
+
+  margin-left: .3vw;
+  }
+
+
+#Events-Icon {
+
+  margin-left: .3vw;
+  padding-right: .5vw;
+  }
+
+
+#Tours-Icon {
+ 
+  padding-right: .4vw;
+  }
+
+
+#Store-Icon {
+ 
+  padding-right: .4vw;
+  }
+
+
+#About-Icon {
+
+  margin-left: .7vw;
+  padding-right: .8vw;
+  }
+
+
+#Send-Email-Link {
+
+  display: block;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #EBE99D;
+  font-family: helvetica;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  }
+
+
+#Send-Email-Link i {
+  font-size: 1.5vw;
+  margin-right: .5vw;
+}
+
+#Email-Form {
+  width: 20vw;
+  height: 1.5vw;
+  margin-left: 5vw;
+  font-size: 1vw;
+
+}
+
+#Email-Submit-Button {
+  background-color: #3E3E3E;
+  border: .1vw solid #EBE99D;
+  width: 5vw;
+  height: 1.95vw;
+  color: #EBE99D;
+  font-size: 1vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#Footer-Container-Middle small {
+
+  color: #EBE99D;
+  display: block;
+  font-size: 1vw;
+  margin-top: 2vw;
+  text-align:center; 
+  margin-left: auto;
+  margin-right: auto;
+  }
